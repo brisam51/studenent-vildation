@@ -11,4 +11,11 @@ class studentController extends Controller
 
         return view('list');
     }
+    public function store(Request $request){
+$student=$request->all();
+        return $student;
+
+    }
+
+
 }

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\studentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,5 @@ Route::get('/', function () {
 Route::get('home',function(){
 return view('home');
 });
+Route::get('list',[studentController::class,'list']);
+Route::post('store',[studentController::class,'store']);
