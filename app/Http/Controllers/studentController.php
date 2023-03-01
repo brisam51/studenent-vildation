@@ -9,8 +9,9 @@ class studentController extends Controller
 {
     //
     public function list(){
+        $student=student::all();
 
-        return view('list');
+        return view('list',compact('student'));
     }
     public function store(Request $request){
 
@@ -22,7 +23,7 @@ student::create([
     'age'=>$request->age,
 
 ]);
-        return '$student';
+        return "";
 
     }
 

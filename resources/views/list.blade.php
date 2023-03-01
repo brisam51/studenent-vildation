@@ -20,7 +20,30 @@
 
             </div>
             <div class="card-body">
+<table class="table-fixed">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>email</th>
+            <th>gender</th>
+            <th>age</th>
+        </tr>
 
+    </thead>
+    @foreach ( $student as $stu )
+
+
+   <tbody>
+<tr>
+    <td>{{$stu['name']}}</td>
+    <td>{{$stu['email']}}</td>
+    <td>{{$stu['gender']}}</td>
+    <td>{{$stu['age']}}</td>
+</tr>
+
+   </tbody>
+   @endforeach
+</table>
 
             </div>
         </div>
