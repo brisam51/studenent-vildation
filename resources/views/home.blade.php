@@ -26,6 +26,10 @@
                         <input type="text"  name="email" id="email" placeholder="Insert email" style="border-width: 2px">
                     </div>
                     <div class="m-4" >
+                        <label>Gender: </label>
+                        <input type="text"  name="gender" id="gender" placeholder="Insert gender" style="border-width: 2px">
+                    </div>
+                    <div class="m-4" >
                         <label>Age  : </label>
                         <input type="text"  name="age" id="age" placeholder="Insert age" style="border-width: 2px">
                     </div>
